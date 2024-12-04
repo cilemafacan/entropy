@@ -13,8 +13,8 @@ with gr.Blocks() as demo:
     with gr.Row():
         with gr.Column(scale=2):
             with gr.Row():
-                input_image_1 = gr.Image(value=inp1, label="Image 1", type="pil", interactive=True)
-                input_image_2 = gr.Image(value=inp2, label="Image 2", type="pil", interactive=True)
+                input_image_1 = gr.Image(value=inp1, label="Image 1", type="pil", interactive=True, height=600)
+                input_image_2 = gr.Image(value=inp2, label="Image 2", type="pil", interactive=True, height=600)
             with gr.Row():
                 hist_1 = gr.Image(label="Histogram of Image 1", type="pil", interactive=False)
                 hist_2 = gr.Image(label="Histogram of Image 2", type="pil", interactive=False)
